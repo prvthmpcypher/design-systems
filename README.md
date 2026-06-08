@@ -1,24 +1,29 @@
-# 🏛️ Architect Portfolio Website
+# 🎨 Design Systems
 
-A sleek, scroll-driven portfolio site for architects — built with **React**, **Tailwind CSS v4**, and **Framer Motion**. Originally designed in Figma and exported via **Figma Make**.
+A curated collection of **production-ready React UI templates** — each designed in Figma and exported via **Figma Make**. Built with React 18, Tailwind CSS v4, Framer Motion, and shadcn/ui.
 
-Live blueprint grid animations, parallax hero, project cards with hover overlays, and a full shadcn/ui component library under the hood.
-
----
-
-## ✨ Features
-
-- **Animated Blueprint Grid** — SVG grid lines that draw on load
-- **Scroll-driven Hero** — parallax opacity + scale with isometric building illustration
-- **Signature Projects** — 3-column masonry with hover blueprint overlay
-- **Design Process** — 4-step workflow with animated entry
-- **Awards Section** — staggered slide-in list
-- **Studio & Contact** — responsive split layout + office locations
-- **Dark mode ready** — full CSS variable theming with `.dark` class support
+Clone any folder, run `npm i && npm run dev`, and you have a fully animated, responsive site ready to customize.
 
 ---
 
-## 🛠️ Tech Stack
+## 📦 Projects
+
+| Project | Type | Description |
+|---|---|---|
+| `Architect Portfolio Website` | Portfolio | Blueprint-themed, scroll-driven animations, SVG grid |
+| `Artist Portfolio Website` | Portfolio | Creative, gallery-focused layout |
+| `Cinematic Photographer Portfolio` | Portfolio | Dark, immersive full-screen visuals |
+| `Immersive Music Producer Portfolio` | Portfolio | Audio-inspired interactive UI |
+| `Interactive Data Portfolio Website` | Portfolio | Chart-heavy, data visualization focus |
+| `Interactive Game Developer Portfolio` | Portfolio | Bold, game-UI aesthetic |
+| `Language Learning Mobile App` | Mobile UI | App mockup with lesson flows |
+| `Musify Mobile App Mockup` | Mobile UI | Music streaming app UI |
+| `Portfolio Website Design` | Portfolio | Clean general-purpose template |
+| `cypher` | Brand | Personal brand / Cypher project files |
+
+---
+
+## 🛠️ Tech Stack (all projects)
 
 | Tool | Version |
 |---|---|
@@ -26,76 +31,61 @@ Live blueprint grid animations, parallax hero, project cards with hover overlays
 | Vite | 6.3.5 |
 | Tailwind CSS | 4.1.12 |
 | Framer Motion | 12.x |
-| shadcn/ui (Radix) | Full suite |
+| shadcn/ui (Radix UI) | Full suite |
 | Lucide React | 0.487.0 |
 
 ---
 
 ## 🚀 Getting Started
 
+Each project is self-contained. Navigate into any folder and run:
+
 ```bash
-# Install dependencies
+cd "Architect Portfolio Website"
+
 npm i
-
-# Start dev server
 npm run dev
-
-# Build for production
-npm run build
 ```
 
-> Uses `pnpm` workspace by default. `npm` works too.
+> `pnpm` workspace is configured by default. `npm` works too.
 
 ---
 
-## 📁 Project Structure
+## 📁 Folder Structure (per project)
 
 ```
-src/
-├── app/
-│   ├── App.tsx              # Main layout + all sections
-│   └── components/
-│       ├── figma/           # ImageWithFallback utility
-│       └── ui/              # Full shadcn/ui component library
-├── styles/
-│   ├── theme.css            # Design tokens (blueprint color palette)
-│   ├── fonts.css            # Inter font import
-│   └── index.css            # Entry stylesheet
-└── main.tsx
-```
-
----
-
-## 🎨 Design Tokens
-
-Custom blueprint-inspired palette defined in `src/styles/theme.css`:
-
-```css
---blueprint-navy:      #0a1628
---blueprint-blue:      #1e3a8a
---blueprint-light-blue:#3b82f6
---blueprint-grid:      rgba(30, 58, 138, 0.15)
+ProjectName/
+├── src/
+│   ├── app/
+│   │   ├── App.tsx              # Main layout & sections
+│   │   └── components/
+│   │       ├── figma/           # Figma utilities (ImageWithFallback)
+│   │       └── ui/              # shadcn/ui component library
+│   └── styles/
+│       ├── theme.css            # Design tokens & color palette
+│       ├── fonts.css            # Google Fonts import
+│       └── index.css            # Entry stylesheet
+├── guidelines/
+│   └── Guidelines.md            # AI customization rules
+├── vite.config.ts
+└── package.json
 ```
 
 ---
 
-## 📸 Image Credits
+## 🎨 Design System
 
-Photos via [Unsplash](https://unsplash.com) — see `ATTRIBUTIONS.md` for license.  
-UI components from [shadcn/ui](https://ui.shadcn.com) under [MIT License](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md).
+All projects use CSS variable-based theming defined in `src/styles/theme.css`. Supports light and dark mode out of the box.
 
----
-
-## 🔧 Customization
-
-Edit `src/app/App.tsx` to swap out:
-- **Projects** — update the `projects` array in `SignatureProjects()`
-- **Awards** — update the `awards` array in `Awards()`
-- **Contact info** — office addresses in `Contact()`
-- **Colors** — all tokens in `src/styles/theme.css`
-
-Guidelines for AI-assisted customization are in `guidelines/Guidelines.md`.
+UI components are from [shadcn/ui](https://ui.shadcn.com) under [MIT License](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md).  
+Photos via [Unsplash](https://unsplash.com) — see `ATTRIBUTIONS.md` in each project.
 
 ---
 
-Made with 🧱 using Figma Make → React
+## ✏️ Customization
+
+Each project has a `guidelines/Guidelines.md` with rules for AI-assisted editing. For manual customization, edit the `App.tsx` data arrays (projects, awards, etc.) and token values in `theme.css`.
+
+---
+
+> Built with [Figma Make](https://www.figma.com/make) → React · by [prvthmpcypher](https://github.com/prvthmpcypher)
